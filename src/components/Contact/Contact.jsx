@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 const Contact = ({ contact }) => {
   const dispatch = useDispatch();
 
-  const handleDeleteContact = contactId => dispatch(deleteContact(contactId));
+  const handleDeleteContact = () => dispatch(deleteContact(contact.id));
 
   return (
     <li className={css.contact}>
